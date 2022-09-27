@@ -1,0 +1,22 @@
+00 Installing ----------------------------------------------------------------------------------------------------------------------------------
+
+	- sudo npm i -g typescript - installes global
+	- tsc --init - in project directory, created file: tsconfig.json
+
+	- В звичайному жс можуть бути опечаткі, приведення типів, коли складувати рядкі з числами, або коли такох властивості
+	об'єкта нема, там буде андефайн, а після множення буде нан...
+
+	- tsc index.ts - command for converting ts to js
+	- we changed  "target": "es2016" to  "target": "es2020", for bigint work (tsconfig.json)
+
+	- "strict": true, - Enable all strict type-checking options. Below options for everyone.
+
+				- type MyBool = true | false; 
+
+				- Дженеріки - типи для передавання змінних
+				const map = new Map(string, number)
+
+				- Тип :void - для функції, яка нічого не повертає
+				- const num = { a: 15} as unknown as {a: 'wew'}
+
+	- 
