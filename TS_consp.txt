@@ -13,10 +13,10 @@
 
 				- type MyBool = true | false; 
 
-				- Дженеріки - типи для передавання змінних
+				- Дженеріки - прокидуємо тип або інтерфейс при виклику функції
 				const map = new Map(string, number)
 
 				- Тип :void - для функції, яка нічого не повертає
-				- const num = { a: 15} as unknown as {a: 'wew'}
+				- const num = { a: 15} as unknown as {a: 'wew'} - приклад зміни типів, як окремий лайвхак
 
 	- 
