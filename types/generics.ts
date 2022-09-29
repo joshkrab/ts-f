@@ -85,7 +85,7 @@ workWithPerson({
 	name: 'Vasya',
 	age: 12,
 })
-
+// При створенні вже не потребує описувати типи, тому що вони описані в функції
 const worker = workWithPerson({
 	name: 'Sergey',
 	type: 'usual',

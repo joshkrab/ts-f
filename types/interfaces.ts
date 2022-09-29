@@ -24,3 +24,14 @@ const customer: Customer = {
 	},
 	bill: 45,
 }
+
+// Приклад сінтаксісу:
+interface Shape {
+	color: string;
+}
+interface Square extends Shape {
+	sideLenght: number;
+}
+let square = {} as Square;
+square.color = 'blue';
+square.sideLenght = 123;

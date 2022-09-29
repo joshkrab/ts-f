@@ -3,11 +3,21 @@ let env: 'development' | 'staging' | 'production' = 'staging';
 // Опис конкретних значень, але не рекомендується, краще писати типи:
 // І потім їх вставляємо де треба
 
-// Types:
+// Types: unions
 type Env = 'development' | 'staging' | 'production';
 type Envf = 'development' | 'staging' | number | {}; // Що завгодно
+type myBool = true | false;
 
 let env2: Env = 'development';
+
+// Приклад:
+function wrapInArray(obj: string | string[]) {
+	if (typeof obj === 'string') {
+		return [obj];
+	} else {
+		return obj;
+	}
+}
 
 // В функції зпочатку валідуємо що прийшло, а після (): що повертає функція
 function setEnv(myEnv: Env): Env {

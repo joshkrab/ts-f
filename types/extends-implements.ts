@@ -1,6 +1,6 @@
 interface Person {
 	name: string;
-	surname?: string; // '?' - Не обов'язково додавати - Not necessarily
+	surname?: string; // '?' - Не обов'язково додавати - Not necessarily - question mark
 }
 
 interface PersonInfo {

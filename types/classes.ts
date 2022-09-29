@@ -28,8 +28,8 @@ class ClassUser implements IClassUser {
 	// Також можемо задати значення за замовчуванням:
 	public name: string; // паблік - значення за замовченням, можна звертатись ззовні
 	surname: string = 'Litvinova';
-	private secretMessage: string; // Неможливо звертатися до приват властивості ззовні
-	protected secretMessage2: string; // Неможливо звертатися до протект властивості ззовні
+	private secretMessage: string; // Неможливо звертатися до приват властивості ззовні, не можемо взяти з прототипа
+	protected secretMessage2: string; // Неможливо звертатися до протект властивості ззовні, можемо взяти з прототипа
 
 	// Також описуємо, що приймаємо в пропси:
 	constructor(props: IClassUser) {
